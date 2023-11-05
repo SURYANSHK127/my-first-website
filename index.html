@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@500&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        button a {
+            text-decoration: none;
+            color: black;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            background-image: url(photo-1553095066-5014bc7b7f2d.avif);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            height: 700px;
+            font-size: 60px;
+            font-weight: 1000;
+            color: white;
+        }
+        button {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .b1 {
+            background-color: black;
+            border: none;
+            border-radius: 0;
+            color: white;
+            transition: all 0.2s ease-in-out;
+        }
+        .b1:hover {
+            background-color: rgb(39, 39, 39);
+            transform: scale(1.1);
+        }
+        .b1 a {
+            color: white;
+        }
+        .b2 {
+            font-size: large;
+            border: none;
+            outline: 2px solid black;  
+            outline-offset: -4px;
+            transition: all 0.2s;
+        }
+        .b2:hover {
+            background-color: rgb(206, 205, 205);
+            outline: 2px solid white;
+            outline-offset: 6px;
+            transform: scale(0.9);
+        }
+        .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        nav {
+            position: fixed;
+            width: 100vw;
+            display: flex;
+            background-color: black;
+            height: 100px;
+            color: white;
+            align-items: center;
+        }
+        nav > .text > a , nav > .items > a {
+            text-decoration: none;
+            color: white;
+        }
+        .text {
+            margin-right: auto; 
+            margin-left: 20px;
+            font-size: xx-large;
+        }
+        .items {
+            margin-right: 20px; 
+        }
+        .products {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .products > h1 {
+            align-self: center;
+            font-size: 30px;
+            margin-left: 30px;
+        }
+        .card {
+            background-color: white;
+            width: 30vw;
+            margin: 30px;
+            margin-top: 100px;
+            box-shadow: 12px 12px 12px gray;
+            padding: 20px;
+        }
+        .c1 {
+            margin-left: 30px;
+        }
+        .c2 {
+            margin-right: 30px;
+        }
+        @media screen and (max-width : 800px) {
+            main > .heading > h1 {
+                font-size: larger;
+            }
+            main {
+                justify-content: center;
+            }
+            .products , .comments{
+                flex-direction: column;
+                align-items: center;
+            }
+            .comments > h1 {
+                margin-top: 40px;
+            }
+            .card {
+                width: 80%;
+            }
+            .c1, .c2 {
+                margin: 10px;
+                margin-bottom: 50px;
+            }
+        }
+        .comments {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .comments > h1 {
+            color: white;
+            margin-left: 5px;
+        }
+        .c3, .c4 {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 20px;
+        flex-direction: column; 
+    }
+    .c3 > h1, .c4 > h1 {
+        margin: 10px 0 5px 0;
+    }
+    .c3 > p, .c4 > p {
+        margin: 5px 0; 
+    }
+    .c3 > img, .c4 > img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="text"><a href="">Website</a></div>
+            <div class="items"><a href="">About</a></div>
+            <div class="items"><a href="" >Login</a></div>
+            <div class="items"><a href="">Blog</a></div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="heading">
+            <h1>Welcome to Website.</h1>
+            <div class="button-container">
+                <button class="b1"><a href="">Read Blog</a></button>
+                <button class="b2"><a href="">Learn More</a></button>
+            </div>
+        </div>
+    </main>
+    
+    <section class="products">
+        <div class="circle"></div>
+        <h1>Hear What people say</h1>
+        <div class="card c1">
+            <h1>Best Website</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum cupiditate, obcaecati, suscipit cum voluptatem, enim ab repudiandae sunt beatae blanditiis labore excepturi ipsum officia dicta velit exercitationem voluptate. Corporis, nam.</p>
+        </div>
+        <div class="card c2">
+            <h1>Buy Now!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatum nostrum assumenda, tempora possimus fuga voluptas minus illum animi veritatis velit, et nihil vero nam, saepe molestiae in </p>
+        </div>
+    </section>
+
+    <section class="comments">
+        <h1>Read our comments</h1>
+        <div class="card c3">
+            <img src="images.png" alt="pic">
+            <h1>"Amazing!"</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem ad sequi? Blanditiis necessitatibus animi placeat molestiae omnis, architecto facere deleniti, quo sit, commodi consequuntur delectus in fugit numquam quisquam?</p>
+        </div>
+        <div class="card c4">
+            <img src="avatars-000308821824-q1pla3-t500x500.jpg" alt="">
+            <h1>"My mind is blown! Awsome Services."</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima autem repellendus corrupti eligendi suscipit est, officia, quidem minus numquam debitis, voluptatibus saepe! Consectetur earum aliquam voluptatem alias officiis a consequuntur.</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
