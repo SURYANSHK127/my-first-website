@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            overflow-x: hidden; 
+        }
+        .imagecontainer {
+            filter: blur(6px);
+            width: 100vw;
+            height: 100vh;
+            background-image: url(purpleback1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            background-color: white;
+            padding: 20px;
+            width: 33.33%;
+            min-width: 300px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 20px;
+        }
+        .card > #head {
+            margin-right: 15px;
+            font-size: xx-large;
+        }
+        .card > #usrname, .card > #password {
+            margin-top: 40px;
+        }
+        input {
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="imagecontainer"></div>
+    <div class="card">
+        <p id="head">Login</p>
+        <p id="usrname">Username</p>
+        <input type="text" name="" id="" placeholder="Enter your text here...">
+        <p id="password">Password</p>
+        <input type="password" name="" id="" placeholder="Enter your text here....">
+    </div>
+</body>
+</html>
