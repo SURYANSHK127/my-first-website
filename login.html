@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cabd4b8298.js" crossorigin="anonymous"></script>
     <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@500&family=Poppins&display=swap');
+      </style>
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
         }
         body {
             overflow-x: hidden; 
@@ -36,6 +42,7 @@
             transform: translate(-50%, -50%);
             border-radius: 20px;
         }
+
         .card > #head {
             margin-right: 15px;
             font-size: xx-large;
@@ -48,16 +55,57 @@
             border-radius: 20px;
             outline: none;
         }
+        #forgetpass {
+            margin-top: 5px;
+        }
+        #rememberme {
+            cursor: default;
+            margin-left: auto;
+        }
+        button {
+            margin-top: 40px;
+            padding: 10px;
+            cursor: pointer;
+            background: rgb(121,124,251);
+background: linear-gradient(13deg, rgba(121,124,251,1) 0%, rgba(63,152,251,1) 11%, rgba(235,70,252,1) 100%);
+transition: all 200ms;
+font-size: larger;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        #head {
+            font-weight: bolder;
+        }
+        .fa-solid {
+            position: absolute;
+            align-self: flex-end;
+            transition: all 0.3s;
+        }
+        .fa-solid:hover {
+            transform: scale(1.4);
+        }
     </style>
 </head>
 <body>
-    <div class="imagecontainer"></div>
+    <div class="imagecontainer">
+    </div>
+    
     <div class="card">
+        <a class="fa-solid fa-house" style="color: #000f29;" href="index.html"></a>
         <p id="head">Login</p>
         <p id="usrname">Username</p>
         <input type="text" name="" id="" placeholder="Enter your text here...">
         <p id="password">Password</p>
         <input type="password" name="" id="" placeholder="Enter your text here....">
+        <p id="forgetpass">
+            <a href="">Forgot Password?</a>
+        </p>
+        <div id="rememberme">
+            Remember me
+            <input type="checkbox" name="" id="remember"></div>
+
+            <button id="submit">Login</button>
     </div>
 </body>
 </html>
