@@ -85,6 +85,23 @@ font-size: larger;
         .fa-solid:hover {
             transform: scale(1.4);
         }
+        .popup {
+            display: none;
+            position: absolute;
+            width: 100%;
+            top: 0%;
+            border: 1px solid #000;
+            padding: 40px;
+            background: #fff;
+            z-index: 1;
+            font-size: larger;
+    }
+    .popup > .fa-x {
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            cursor: pointer;
+    }
     </style>
 </head>
 <body>
@@ -95,9 +112,9 @@ font-size: larger;
         <a class="fa-solid fa-house" style="color: #000f29;" href="index.html"></a>
         <p id="head">Login</p>
         <p id="usrname">Username</p>
-        <input type="text" name="" id="" placeholder="Enter your text here...">
+        <input type="text" name="" id="username" placeholder="Enter your text here...">
         <p id="password">Password</p>
-        <input type="password" name="" id="" placeholder="Enter your text here....">
+        <input type="password" name="" id="pass" placeholder="Enter your text here....">
         <p id="forgetpass">
             <a href="">Forgot Password?</a>
         </p>
@@ -106,6 +123,7 @@ font-size: larger;
             <input type="checkbox" name="" id="remember"></div>
 
             <button id="submit">Login</button>
+            <script src="login.js"></script>
     </div>
 </body>
 </html>
