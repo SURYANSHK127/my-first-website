@@ -78,7 +78,9 @@ nav {
     height: 100px;
     color: white;
     align-items: center;
+    letter-spacing: 1px;
 }
+
 nav > .text > a , nav > .items > a {
     text-decoration: none;
     color: white;
